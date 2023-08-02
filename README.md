@@ -4,13 +4,14 @@ Most codes are pushed by lqfong9 (my work github account)
 This repo is meant for my personal growth and interest in learning CUDA through PyCUDA
 
 # Setup Environment
-- This is setup is for ubuntu-20.04.
+- This setup is for ubuntu-20.04.
 - Setup Docker and Nvida container toolkit: [instructions](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 - clone the TensorRT repo at your directory
 ```shell
 git clone https://github.com/NVIDIA/TensorRT
 bash ./docker/build.sh --file docker/ubuntu-20.04.Dockerfile --tag tensorrt-ubuntu20.04-cuda12.0
 ```
+- Dockerfile for other OS should be available in the ./docker directory
 - After the docker image is built successfully, change directory to this repo
 ```shell
 cd /path/to/pycuda_playground
